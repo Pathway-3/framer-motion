@@ -1,3 +1,23 @@
+# Framer Motion
+
+The project was to use framer motion to animate the three images. It was done with the following features: scale, rotation and opacity.
+
+## Features
+
+- Scale: I scaled the image to twice the size of the image and back to original size.
+
+- Rotate: I rotate the image by 360 degrees and scaled the image as is turns.
+
+- Opacity: I made the image transparent and back to original image on hover.
+
+- Layout: The layout is a flex
+
+## Code for the motion project.
+
+Here is my code that I used.
+
+![alt text](image.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
