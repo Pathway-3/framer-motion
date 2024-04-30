@@ -18,6 +18,16 @@ Here is my code that I used.
 
 ![alt text](image.png)
 
+## Documentation
+
+    [Framer Motion Docs - Github](https://www.framer.com/api/)
+
+I followed the documentation provided in order to create this animation. It was very helpful, especially when it came to using the `whileHover`. This animation was created with the following options for the animation that will be animated.
+
+I followed the documentation provided in order to create this animation. It was very helpful and easy to understand.
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
