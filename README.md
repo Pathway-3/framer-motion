@@ -2,21 +2,30 @@
 
 The project was to use framer motion to animate the three images. It was done with the following features: scale, rotation and opacity.
 
-## Features
+## Image 1 - Scale and rotate.
 
-- Scale: I scaled the image to twice the size of the image and back to original size.
+![alt text](image-1.png)
+For the first image of the beach I used the motion scale and rotate. For the rotation i made it go 360 degress. As it rotated I make it scale bigger and back to original size.
 
-- Rotate: I rotate the image by 360 degrees and scaled the image as is turns.
+## Image 2 - Springing Image
 
-- Opacity: I made the image transparent and back to original image on hover.
+I made the image bounce in scale. Below is the code with useSpring that gives the image the bounce effect.
 
-- Layout: The layout is a flex
+```jsx
+const spring = useSpring(0, { stiffness: 300, damping: 15 });
+```
 
-## Code for the motion project.
+The `useSpring` function takes two parameters. The first parameter is a number. This represents the current value of the animation. If you pass `0`, it will start from zero and animate to its final value (which is set Stiffness and dampning). The second argument is an object where you can define how your animation should behave. In this case I used `{stiffness: 300, damping: 15}
 
-Here is my code that I used.
+## Image 3 - Opacity
 
-![alt text](image.png)
+The opacity property was used to make the image fade in and out.
+
+```jsx
+<motion.img whileHover={{ opacity: [1, 0, 1] }} transition={{ duration: 1 }} />
+```
+
+This allows the image to fade in and out.
 
 ## Documentation
 

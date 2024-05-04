@@ -1,9 +1,11 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { motion, useSpring } from "framer-motion";
 import "../../app/styles/main.css";
 export default function Motion() {
+  const spring = useSpring(0, { stiffness: 300, damping: 15 });
+
   return (
     <div>
       <h1>Framer Motion</h1>
@@ -18,8 +20,13 @@ export default function Motion() {
           src="/Beach.png"
         />
         <motion.img
-          whileHover={{ scale: [1, 2, 1], transition: { duration: 2 } }}
           src="/Field.png"
+          transition={{ duration: 2 }}
+          style={spring}
+          whileHover={{
+            scale: [1, 1.5, 1],
+            transition: { duration: 2 },
+          }}
         />
         <motion.img
           whileHover={{ opacity: [1, 0, 1] }}
